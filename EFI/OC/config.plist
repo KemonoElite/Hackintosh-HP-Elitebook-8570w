@@ -447,8 +447,6 @@
 			<dict>
 				<key>Arch</key>
 				<string>Any</string>
-				<key>BundlePath</key>
-				<string>RTCMemoryFixup.kext</string>
 				<key>Comment</key>
 				<string>RTCMemoryFixup.kext</string>
 				<key>Enabled</key>
@@ -461,6 +459,8 @@
 				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
+				<key>BundlePath</key>
+				<string>RTCMemoryFixup.kext</string>
 			</dict>
 			<dict>
 				<key>Arch</key>
@@ -1345,8 +1345,6 @@
 				<data>AggAAA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
-				<key>prev-lang:kbd</key>
-				<data>ZW4tVVM6MA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>

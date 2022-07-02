@@ -1,0 +1,51 @@
+Hello I am currently having a issue with my installer setup 
+
+I managed to make the usb bootable and load into the macos installer but keeps defaulting into Russian, I have gone thru the bios about 3 times and disabled all features/options that the guide ask to,
+reformatted drive, while ignoring the Russian and go about install macos it gives some error in Russian sadly, I am a USA english speaker so I don't know Russian lol
+I also do have a real issue of the mouse buttons won't work, yet the mousepad does move the mouse around I am having to use external mouse to click, this was the case when I was last capable of
+going into the installer
+
+I was able to go into the installer untell I did this bellow 
+
+Currently having issues setting language, I have done nvreset on all attempts I have blanked "prev-lang:kbd" so it would show the language choice and "prev-lang:kbd	 String	 en-US:0" and even done 
+"NVRAM -> Delete -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> Item 0 | String | prev-lang:kbd" which doing so booted then hit a gray screen with the mouse being moveable and since then its been booting
+on this blank screen ever since then
+
+I have re-flashed bios and redone settings, cleared usb and repartitioned it, redid the plist config. and swaped out from MacBookPro10,1 and MacBookPro9,1 and hasnt done anything it this regard
+Was capable of atleast going into the installer but, Honustly speaking I think this may be a bios issue and as I have stated I have tried re-flashing bios and I have attempted to clear cmos
+how Hp recommends it. hold win + v and power for 3 sec and didnt show a message or anything
+
+Current Goals
+Trying to get macos to boot while its installed on main drive then work on stuff outside of that.
+
+I am giving a plist config that I copy and edited, So most stuff I am troubleshooting won't show up on this config
+
+currently using another machine with windows 11 to edit usb etc and also used diskpart to partition usb, using the plist editor Propertree
+
+Using the current GenSMBIOS option 3 and using info for MacBookPro10,1 and MacBookPro9,1
+
+If having Mac OS ignore the gpu is the better answer I am not against the idea
+
+My Hp Elitebook 8570w is on latest Firmware on website
+
+I have Done
+for Nvidia on Monterey
+Kernel > Misc > Security and change SecureBootModel from Default to Disabled
+NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 and change csr-active-config from 00000000 to 02080000
+
+On all attempts and the first time I did this I was capable of going into the installer
+
+
+My Config
+https://github.com/KemonoElite/Hackintosh-HP-Elitebook-8570w/tree/main/EFI
+
+info on hardware
+https://support.hp.com/ca-en/document/c03414805
+
+Things that have been tried
+https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#nvram
+https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/userspace-issues.html#macos-installer-in-russian
+
+Looking for any help, I appreciate your time and effort
+
+Very sorry if this causes any inconvinence, I have been working on this for 2 to 3 days and figured it would be best to get some help from people that know the machine better
